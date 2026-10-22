@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GEN+AI — Interview Readiness Reports
 
 Full-stack app that takes a **resume (PDF)**, a **job description** and a **self-description**,
@@ -497,3 +498,7 @@ browser only ever holds an `httpOnly` cookie it cannot read.
   Playwright scripts in `tools/`, not by unit tests.
 * `Frontend/src/data/reports.js` and `ReportSheet.jsx` are **sample** data for the landing
   page only — they are not part of the generation flow.
+=======
+# GEN-AI-BY-HASSNAIN
+GEN+AI is an AI-powered web application built using the MERN stack, focused on intelligent interview preparation, AI-generated reports, and modern user experiences.
+>>>>>>> 3a702855dc27c55fb7a7d5a53b033c11f8b343c9
