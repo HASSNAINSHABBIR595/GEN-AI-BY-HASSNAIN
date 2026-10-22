@@ -1,0 +1,2052 @@
+{
+ "url": "http://localhost:5174/",
+ "at": "2026-10-21T08:31:18.104Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.32,
+    0.48,
+    0.47,
+    0.46,
+    0.65
+   ],
+   "motion": {
+    "elements": 27,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 27,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3839,
+     "screens": 4.3,
+     "words": 564,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Walk into your next interview prepared.",
+     "words": 6,
+     "chars": 39,
+     "lines": 3,
+     "size": 64,
+     "vw": 4.4,
+     "font": "Inter",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.38,
+     "top": 207,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Walk into your next interview prepared.",
+     "words": 6,
+     "lines": 3,
+     "size": 64,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "Walk into your next interview prepared.",
+      "words": 6,
+      "chars": 39,
+      "lines": 3,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Inter",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 207,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "One report, built around your next role",
+      "words": 7,
+      "chars": 39,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 858,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three steps from application to preparation",
+      "words": 6,
+      "chars": 43,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1643,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions that actually relate to the role",
+      "words": 7,
+      "chars": 42,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2333,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Know exactly where to improve",
+      "words": 5,
+      "chars": 29,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 2809,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Know where you stand before the interview.",
+      "words": 7,
+      "chars": 42,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.72,
+      "top": 3241,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 7,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      32,
+      64
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 14,
+      "leading": 1.71,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 58,
+     "max": {
+      "size": 64,
+      "vw": 4.4,
+      "font": "Inter",
+      "text": "Walk into your next interview prepared."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 10,
+     "microLabelShare": 0.036,
+     "microSamples": [
+      "AI interview preparation",
+      "Target role",
+      "Match",
+      "Next question",
+      "What you get",
+      "How it works"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.05,
+     "smallText": 29
+    },
+    "eyebrows": [
+     {
+      "text": "AI interview preparation",
+      "above": "Walk into your next interview prepared.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 167
+     },
+     {
+      "text": "What you get",
+      "above": "One report, built around your next role",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 825
+     },
+     {
+      "text": "How it works",
+      "above": "Three steps from application to preparat",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1609
+     },
+     {
+      "text": "Interview questions",
+      "above": "Questions that actually relate to the ro",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2299
+     },
+     {
+      "text": "Skill analysis",
+      "above": "Know exactly where to improve",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2775
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#e5e7eb",
+       "top": 1010,
+       "hsl": {
+        "h": 220,
+        "s": 0.13,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f7f8fa",
+       "top": 1517,
+       "hsl": {
+        "h": 220,
+        "s": 0.23,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5f6368",
+       "share": 0.58
+      },
+      {
+       "color": "#202124",
+       "share": 0.2
+      },
+      {
+       "color": "#6b7280",
+       "share": 0.14
+      },
+      {
+       "color": "#3730a3",
+       "share": 0.03
+      },
+      {
+       "color": "#4338ca",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#4338ca",
+      "hsl": {
+       "h": 245,
+       "s": 0.58,
+       "l": 0.51
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 4,
+     "radius": 10,
+     "height": 36,
+     "withShadow": 5,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Get started",
+      "Create your free account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 5,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px",
+      "a.btn.btn-secondary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px",
+      "div.card.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.btn.btn-primary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 11,
+     "hairlineSamples": [
+      "header.sticky.top-0 1440px",
+      "section.border-b.border-line 1440px",
+      "div.flex.items-center 496px",
+      "section#features.section.border-b 1440px",
+      "section#how-it-works.section.border-b 1440px"
+     ],
+     "outlinedBoxes": 9,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 9,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 1011
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1795
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3839,
+    "margins": {
+     "left": 164,
+     "right": 180
+    },
+    "sections": [
+     {
+      "sel": "section.border-b.border-line",
+      "tag": "section",
+      "top": 65,
+      "height": 668,
+      "words": 103,
+      "media": 0,
+      "middle": 97,
+      "heading": {
+       "text": "Walk into your next interview prepared.",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 164,
+      "right": 189,
+      "textLeft": 164,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.section.border-b",
+      "tag": "section",
+      "top": 733,
+      "height": 785,
+      "words": 133,
+      "media": 0,
+      "middle": 57,
+      "heading": {
+       "text": "One report, built around your next role",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 164,
+      "right": 229,
+      "textLeft": 164,
+      "textRight": 229,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.section.border-b",
+      "tag": "section",
+      "top": 1517,
+      "height": 616,
+      "words": 98,
+      "media": 0,
+      "middle": 120,
+      "heading": {
+       "text": "Three steps from application to preparation",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 164,
+      "right": 228,
+      "textLeft": 164,
+      "textRight": 228,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#report.section.border-b",
+      "tag": "section",
+      "top": 2133,
+      "height": 995,
+      "words": 153,
+      "media": 0,
+      "middle": 83,
+      "heading": {
+       "text": "Questions that actually relate to the role",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 164,
+      "right": 180,
+      "textLeft": 164,
+      "textRight": 180,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 3128,
+      "height": 396,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Know where you stand before the interview.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 394,
+      "right": 394,
+      "textLeft": 394,
+      "textRight": 394,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-line",
+      "tag": "footer",
+      "top": 3524,
+      "height": 315,
+      "words": 43,
+      "media": 0,
+      "middle": 233,
+      "heading": {
+       "text": "Product",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 164,
+      "right": 164,
+      "textLeft": 164,
+      "textRight": 164,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Walk into your next interview prepared.",
+      "size": 64,
+      "top": 207,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 164,
+      "n": 9
+     },
+     {
+      "x": 189,
+      "n": 4
+     },
+     {
+      "x": 559,
+      "n": 4
+     },
+     {
+      "x": 930,
+      "n": 4
+     },
+     {
+      "x": 752,
+      "n": 2
+     },
+     {
+      "x": 773,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 25,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.16,
+    "voidBox": {
+     "x": 300,
+     "y": 660,
+     "w": 1140,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.36,
+    0.31,
+    0.56,
+    0.49,
+    0.72
+   ],
+   "motion": {
+    "elements": 27,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 27,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4531,
+     "screens": 4.4,
+     "words": 554,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Walk into your next interview prepared.",
+     "words": 6,
+     "chars": 39,
+     "lines": 2,
+     "size": 43,
+     "vw": 5.6,
+     "font": "Inter",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 191,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Walk into your next interview prepared.",
+     "words": 6,
+     "lines": 2,
+     "size": 43,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "Walk into your next interview prepared.",
+      "words": 6,
+      "chars": 39,
+      "lines": 2,
+      "size": 43,
+      "vw": 5.6,
+      "font": "Inter",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 191,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      43
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 14,
+      "leading": 1.71,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 76,
+     "max": {
+      "size": 43,
+      "vw": 5.6,
+      "font": "Inter",
+      "text": "Walk into your next interview prepared."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 10,
+     "microLabelShare": 0.037,
+     "microSamples": [
+      "AI interview preparation",
+      "Target role",
+      "Match",
+      "Next question",
+      "What you get",
+      "How it works"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.05,
+     "smallText": 29
+    },
+    "eyebrows": [
+     {
+      "text": "AI interview preparation",
+      "above": "Walk into your next interview prepared.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 150
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#e5e7eb",
+       "top": 1335,
+       "hsl": {
+        "h": 220,
+        "s": 0.13,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f7f8fa",
+       "top": 2025,
+       "hsl": {
+        "h": 220,
+        "s": 0.23,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5f6368",
+       "share": 0.58
+      },
+      {
+       "color": "#202124",
+       "share": 0.2
+      },
+      {
+       "color": "#6b7280",
+       "share": 0.14
+      },
+      {
+       "color": "#3730a3",
+       "share": 0.03
+      },
+      {
+       "color": "#4338ca",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#4338ca",
+      "hsl": {
+       "h": 245,
+       "s": 0.58,
+       "l": 0.51
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": 10,
+     "height": 48,
+     "withShadow": 4,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Create your free account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 5,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px",
+      "a.btn.btn-secondary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px",
+      "div.card.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.btn.btn-primary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 11,
+     "hairlineSamples": [
+      "header.sticky.top-0 768px",
+      "section.border-b.border-line 768px",
+      "div.flex.items-center 458px",
+      "section#features.section.border-b 768px",
+      "section#how-it-works.section.border-b 768px"
+     ],
+     "outlinedBoxes": 9,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 9,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 1336
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2259
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4531,
+    "margins": {
+     "left": 24,
+     "right": 45
+    },
+    "sections": [
+     {
+      "sel": "section.border-b.border-line",
+      "tag": "section",
+      "top": 65,
+      "height": 1036,
+      "words": 103,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Walk into your next interview prepared.",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 139,
+      "textLeft": 24,
+      "textRight": 139,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.section.border-b",
+      "tag": "section",
+      "top": 1101,
+      "height": 924,
+      "words": 133,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One report, built around your next role",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 51,
+      "textLeft": 24,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.section.border-b",
+      "tag": "section",
+      "top": 2025,
+      "height": 594,
+      "words": 98,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three steps from application to preparation",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 72,
+      "textLeft": 24,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#report.section.border-b",
+      "tag": "section",
+      "top": 2620,
+      "height": 1234,
+      "words": 153,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions that actually relate to the role",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 45,
+      "textLeft": 24,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 3854,
+      "height": 351,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Know where you stand before the interview.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 108,
+      "right": 109,
+      "textLeft": 108,
+      "textRight": 109,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-line",
+      "tag": "footer",
+      "top": 4205,
+      "height": 326,
+      "words": 43,
+      "media": 0,
+      "middle": 55,
+      "heading": {
+       "text": "Product",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Walk into your next interview prepared.",
+      "size": 43,
+      "top": 191,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 11
+     },
+     {
+      "x": 45,
+      "n": 8
+     },
+     {
+      "x": 409,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 25,
+    "bodySize": 14,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.38,
+    0.36,
+    0.41,
+    0.59,
+    0.54,
+    0.52,
+    0.74,
+    0.92
+   ],
+   "motion": {
+    "elements": 27,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 27,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6353,
+     "screens": 7.5,
+     "words": 554,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Walk into your next interview prepared.",
+     "words": 6,
+     "chars": 39,
+     "lines": 3,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Inter",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 167,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Walk into your next interview prepared.",
+     "words": 6,
+     "lines": 3,
+     "size": 40,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "Walk into your next interview prepared.",
+      "words": 6,
+      "chars": 39,
+      "lines": 3,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Inter",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 167,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "One report, built around your next role",
+      "words": 7,
+      "chars": 39,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1304,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three steps from application to preparation",
+      "words": 6,
+      "chars": 43,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2876,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions that actually relate to the role",
+      "words": 7,
+      "chars": 42,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3915,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Know exactly where to improve",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4672,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Know where you stand before the interview.",
+      "words": 7,
+      "chars": 42,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 5404,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 7,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      40
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 14,
+      "leading": 1.71,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Inter",
+      "text": "Walk into your next interview prepared."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 10,
+     "microLabelShare": 0.037,
+     "microSamples": [
+      "AI interview preparation",
+      "Target role",
+      "Match",
+      "Next question",
+      "What you get",
+      "How it works"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.05,
+     "smallText": 29
+    },
+    "eyebrows": [
+     {
+      "text": "AI interview preparation",
+      "above": "Walk into your next interview prepared.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 126
+     },
+     {
+      "text": "What you get",
+      "above": "One report, built around your next role",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1271
+     },
+     {
+      "text": "How it works",
+      "above": "Three steps from application to preparat",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2842
+     },
+     {
+      "text": "Interview questions",
+      "above": "Questions that actually relate to the ro",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3882
+     },
+     {
+      "text": "Skill analysis",
+      "above": "Know exactly where to improve",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4638
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#e5e7eb",
+       "top": 1496,
+       "hsl": {
+        "h": 220,
+        "s": 0.13,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f7f8fa",
+       "top": 2782,
+       "hsl": {
+        "h": 220,
+        "s": 0.23,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#eef2ff",
+       "top": 5363,
+       "hsl": {
+        "h": 226,
+        "s": 1,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5f6368",
+       "share": 0.58
+      },
+      {
+       "color": "#202124",
+       "share": 0.2
+      },
+      {
+       "color": "#6b7280",
+       "share": 0.14
+      },
+      {
+       "color": "#3730a3",
+       "share": 0.03
+      },
+      {
+       "color": "#4338ca",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#4338ca",
+      "hsl": {
+       "h": 245,
+       "s": 0.58,
+       "l": 0.51
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": 10,
+     "height": 48,
+     "withShadow": 4,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Create your free account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 5,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px",
+      "a.btn.btn-secondary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px",
+      "div.card.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.btn.btn-primary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 11,
+     "hairlineSamples": [
+      "header.sticky.top-0 390px",
+      "section.border-b.border-line 390px",
+      "div.flex.items-center 340px",
+      "section#features.section.border-b 390px",
+      "section#how-it-works.section.border-b 390px"
+     ],
+     "outlinedBoxes": 9,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 9,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 1497
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 3067
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6353,
+    "margins": {
+     "left": 24,
+     "right": 27
+    },
+    "sections": [
+     {
+      "sel": "section.border-b.border-line",
+      "tag": "section",
+      "top": 65,
+      "height": 1146,
+      "words": 103,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Walk into your next interview prepared.",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 45,
+      "textLeft": 24,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features.section.border-b",
+      "tag": "section",
+      "top": 1211,
+      "height": 1572,
+      "words": 133,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One report, built around your next role",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 27,
+      "textLeft": 24,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.section.border-b",
+      "tag": "section",
+      "top": 2782,
+      "height": 1039,
+      "words": 98,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three steps from application to preparation",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 26,
+      "textLeft": 24,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#report.section.border-b",
+      "tag": "section",
+      "top": 3822,
+      "height": 1502,
+      "words": 153,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions that actually relate to the role",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 33,
+      "textLeft": 24,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 5323,
+      "height": 432,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Know where you stand before the interview.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 51,
+      "right": 51,
+      "textLeft": 51,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-line",
+      "tag": "footer",
+      "top": 5755,
+      "height": 598,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Product",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 30,
+      "textLeft": 24,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Walk into your next interview prepared.",
+      "size": 40,
+      "top": 167,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 45,
+      "n": 14
+     },
+     {
+      "x": 24,
+      "n": 11
+     }
+    ],
+    "leftBlocks": 25,
+    "bodySize": 14,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Walk into your next interview prepared.\" → 3 lines (6 words, 64px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "5 eyebrow/kicker label(s) above headings: \"AI interview preparation\" above \"Walk into your next interview prepared.\"; \"What you get\" above \"One report, built around your next role\"; \"How it works\" above \"Three steps from application to preparat\"; \"Interview questions\" above \"Questions that actually relate to the ro\"; \"Skill analysis\" above \"Know exactly where to improve\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "10 tiny uppercase letter-spaced labels (e.g. \"AI interview preparation\", \"Target role\", \"Match\", \"Next question\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "5 box-shadow(s) on elements at rest: a.btn.btn-primary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px | a.btn.btn-secondary → rgba(16, 24, 40, 0.05) 0px 1px 2px 0px | div.card.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "11 thin rule(s)/divider line(s): header.sticky.top-0 1440px | section.border-b.border-line 1440px | div.flex.items-center 496px | section#features.section.border-b 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "9 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (6 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "palette-purple",
+   "width": 1440,
+   "message": "Indigo / violet (button #4338ca, text #3730a3, text #4338ca).",
+   "fix": "Use the accent from the drawn palette.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "11 different font sizes (9, 10, 11, 12, 14, 15, 16, 17, 18, 32, 64).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "29 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 64px (4.4vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt General Sans and General Sans, but the page renders Inter.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 164px on the left, 180px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Walk into your next interview prepared.\" → 3 lines (6 words, 40px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\before\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\before\\desktop-page-01.jpg",
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\before\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\before\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\before\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\before\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
