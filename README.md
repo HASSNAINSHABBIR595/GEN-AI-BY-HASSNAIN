@@ -497,6 +497,7 @@ and the console message from the API.
 | `OLLAMA_MODEL`        | Backend  | `qwen2.5:7b`             | Local model used for both AI passes when no cloud key is set.                              |
 | `OLLAMA_NUM_CTX`      | Backend  | `8192`                   | Context window for the local model. Must fit the prompt plus the answer.                   |
 | `OLLAMA_NUM_PREDICT`  | Backend  | `4096`                   | Maximum answer length. Too low truncates the JSON.                                         |
+| `MAX_RESUME_MB`       | Backend  | `10`                     | Resume size limit. Use `4` on a host that caps the request body (serverless).               |
 | `NODE_ENV`            | Backend  | `development`            | `production` disables the loopback CORS allowance and the dev error details.                |
 | `VITE_API_URL`        | Frontend | `http://localhost:3000`  | Backend base URL used by the browser.                                                       |
 | `VITE_API_TIMEOUT_MS` | Frontend | `3600000` (60 min)       | Client timeout for report generation.                                                       |
@@ -527,7 +528,36 @@ browser only ever holds an `httpOnly` cookie it cannot read.
 
 ---
 
-## 10. Known limitations
+## 10. Deployment (Vercel)
+
+`vercel.json` deploys two services: the **frontend** (Vite) and the **backend** (Express as a
+serverless function). `/api/*` is rewritten to the backend, so the browser talks to one origin.
+
+Environment variables to set in the Vercel project (the backend service):
+
+| Variable | Value | Why |
+|---|---|---|
+| `MONGO_URI` | your Atlas connection string | required |
+| `JWT_SECRET` | a long random string | required, signs the session cookie |
+| `SENSENOVA_API_KEY` | your provider key | the report engine |
+| `SENSENOVA_MODEL` / `SENSENOVA_BASE_URL` | provider defaults | optional |
+| `MAX_RESUME_MB` | `4` | a serverless request body is capped at ~4.5 MB |
+| `CLIENT_URL` | the site origin | optional: a request from the same host is always allowed |
+
+Things that matter for the deployment:
+
+- `vercel.json` sets `"maxDuration": 300` for the backend: a report takes ~1–2 minutes, which
+  is longer than the 60 s default function timeout.
+- The resume limit follows the host: set `MAX_RESUME_MB=4` on Vercel (10 MB locally). The
+  client is told the real limit through the error message.
+- `Backend/server.js` exports the Express app when `process.env.VERCEL` is set, so the function
+  does not open a port, and the database is connected once per cold start.
+- `Frontend/.env.production` points `VITE_API_URL` at the deployed origin, so the browser
+  calls `/api/...` on the same host (no CORS preflight, the session cookie is sent).
+
+---
+
+## 11. Known limitations
 
 - **Generation time.** ~1–2 minutes per report with the cloud provider (SenseNova).
   The local fallback needs ~15–30 minutes on a CPU-only 8 GB machine. Free RAM matters for
