@@ -764,9 +764,9 @@ function ReportGenerationPage() {
                   </div>
                 ) : (
                   <ul className="space-y-3">
-                    {reports.map((item) => (
+                    {reports.map((item, index) => (
                       <li
-                        key={item._id}
+                        key={item._id || `report-${index}`}
                         className="flex flex-col gap-4 border-b border-line pb-4 sm:flex-row sm:items-center sm:justify-between"
                       >
                         <div className="min-w-0">

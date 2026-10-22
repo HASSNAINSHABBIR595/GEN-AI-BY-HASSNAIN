@@ -1,7 +1,19 @@
+import "dotenv/config";
+
 import { z } from "zod";
+import OpenAI from "openai";
 import http from "http";
 
-// ✅ Ollama connection, configurable through the environment
+// ✅ SenseNova connection (OpenAI compatible), configurable through the environment
+const SENSENOVA_BASE_URL = (
+  process.env.SENSENOVA_BASE_URL || "https://token.sensenova.ai/v1"
+).trim();
+const SENSENOVA_API_KEY = (process.env.SENSENOVA_API_KEY || "").trim();
+const SENSENOVA_MODEL = (
+  process.env.SENSENOVA_MODEL || "sensenova-6.8-flash-lite"
+).trim();
+
+// ✅ Local Ollama, used when no cloud provider is configured
 const OLLAMA_URL = (process.env.OLLAMA_URL || "http://127.0.0.1:11434").trim();
 const OLLAMA_MODEL = (process.env.OLLAMA_MODEL || "qwen2.5:7b").trim();
 const OLLAMA_CHAT_ENDPOINT = new URL("/api/chat", OLLAMA_URL);
@@ -11,6 +23,35 @@ const OLLAMA_CHAT_ENDPOINT = new URL("/api/chat", OLLAMA_URL);
 // produces invalid JSON, so the defaults are generous and overridable.
 const OLLAMA_NUM_CTX = Number(process.env.OLLAMA_NUM_CTX) || 8192;
 const OLLAMA_NUM_PREDICT = Number(process.env.OLLAMA_NUM_PREDICT) || 4096;
+
+/**
+ * The report engine talks to SenseNova when an API key is configured and
+ * falls back to the local Ollama model otherwise. The client is created
+ * lazily so a missing key can never stop the server from booting.
+ */
+const useSenseNova = SENSENOVA_API_KEY.length > 0;
+let senseNovaClient = null;
+
+// Not every provider understands a JSON schema request. The first rejection
+// switches the engine to plain JSON for the rest of the process.
+let providerSupportsJsonSchema = true;
+
+function getSenseNovaClient() {
+  if (!useSenseNova) {
+    throw new Error(
+      "SenseNova is not configured. Set SENSENOVA_API_KEY or use the local Ollama model.",
+    );
+  }
+
+  if (!senseNovaClient) {
+    senseNovaClient = new OpenAI({
+      baseURL: SENSENOVA_BASE_URL,
+      apiKey: SENSENOVA_API_KEY,
+    });
+  }
+
+  return senseNovaClient;
+}
 
 // ✅ Direct HTTP — No timeout issues
 function ollamaChat(payload) {
@@ -46,6 +87,80 @@ function ollamaChat(payload) {
     req.write(body);
     req.end();
   });
+}
+
+/**
+ * One chat call to the configured provider. Both AI passes use it, so the
+ * provider can be switched without touching the prompts.
+ */
+async function chatCompletion({ system, user, schema }) {
+  if (useSenseNova) {
+    const messages = [];
+
+    if (system) messages.push({ role: "system", content: system });
+    messages.push({ role: "user", content: user });
+
+    const request = {
+      model: SENSENOVA_MODEL,
+      messages,
+      temperature: 0.1,
+    };
+
+    let response;
+
+    if (providerSupportsJsonSchema) {
+      try {
+        // Ask for the exact JSON shape when the provider supports it.
+        response = await getSenseNovaClient().chat.completions.create({
+          ...request,
+          response_format: {
+            type: "json_schema",
+            json_schema: { name: "interview_report", schema, strict: false },
+          },
+        });
+      } catch (error) {
+        // The provider does not know the schema: ask for plain JSON from now on.
+        providerSupportsJsonSchema = false;
+
+        console.warn(
+          "[AI] The provider rejected the JSON schema, asking for plain JSON instead:",
+          error?.message,
+        );
+
+        response = await getSenseNovaClient().chat.completions.create(request);
+      }
+    } else {
+      response = await getSenseNovaClient().chat.completions.create(request);
+    }
+
+    const content = response.choices?.[0]?.message?.content;
+
+    if (!content) {
+      throw new Error("Empty response from SenseNova");
+    }
+
+    return content;
+  }
+
+  const response = await ollamaChat({
+    model: OLLAMA_MODEL,
+    messages: [{ role: "user", content: user }],
+    format: schema,
+    stream: false,
+    options: {
+      temperature: 0.1,
+      num_ctx: OLLAMA_NUM_CTX,
+      num_predict: OLLAMA_NUM_PREDICT,
+    },
+  });
+
+  if (response.error) throw new Error(`Ollama error: ${response.error}`);
+
+  const content = response.message?.content;
+
+  if (!content) throw new Error("Empty response from Ollama");
+
+  return content;
 }
 
 // ===== JSON PARSING =====
@@ -252,6 +367,117 @@ function parseModelJson(content) {
   }
 
   throw new Error("The AI model did not return valid JSON.");
+}
+
+// ===== MODEL OUTPUT CLEANING =====
+
+// Fallbacks for the few enum fields the model sometimes gets wrong.
+const ENUM_FALLBACKS = {
+  hiringRecommendation: "Consider with Reservations",
+  severity: "medium",
+  importance: "preferred",
+  alignment: "partial",
+  difficulty: "medium",
+};
+
+function hasText(value) {
+  return typeof value === "string" && value.trim().length > 0;
+}
+
+/**
+ * Cleans the model answer against the JSON schema that was requested:
+ *
+ * - an array entry without its required fields is dropped (a half written
+ *   entry cannot be shown in the report),
+ * - a missing optional string becomes an empty string,
+ * - an unknown enum value falls back to a safe default.
+ *
+ * The Zod validation that runs afterwards still decides whether the report
+ * is complete enough to be stored.
+ */
+export function sanitizeModelOutput(value, schema) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return value;
+  }
+
+  const result = { ...value };
+  const properties = schema?.properties || {};
+
+  for (const [key, definition] of Object.entries(properties)) {
+    const current = result[key];
+
+    if (definition.type === "array" && Array.isArray(current)) {
+      const itemSchema = definition.items || {};
+      const required = Array.isArray(itemSchema.required)
+        ? itemSchema.required
+        : [];
+
+      if (itemSchema.type === "string") {
+        result[key] = current.filter(hasText);
+        continue;
+      }
+
+      const cleaned = [];
+
+      for (const item of current) {
+        if (!item || typeof item !== "object") continue;
+
+        const complete = required.every((field) => {
+          const fieldValue = item[field];
+          const fieldDefinition = itemSchema.properties?.[field];
+
+          if (fieldDefinition?.type === "string") {
+            return hasText(fieldValue);
+          }
+
+          return fieldValue !== undefined && fieldValue !== null;
+        });
+
+        if (!complete) continue;
+
+        const copy = { ...item };
+
+        for (const [field, fieldDefinition] of Object.entries(
+          itemSchema.properties || {},
+        )) {
+          if (fieldDefinition?.type === "string") {
+            if (!hasText(copy[field])) copy[field] = "";
+
+            if (
+              Array.isArray(fieldDefinition.enum) &&
+              !fieldDefinition.enum.includes(copy[field])
+            ) {
+              const fallback = ENUM_FALLBACKS[field];
+
+              if (fallback) copy[field] = fallback;
+            }
+          } else if (copy[field] === undefined || copy[field] === null) {
+            copy[field] = fieldDefinition?.default ?? "";
+          }
+        }
+
+        cleaned.push(copy);
+      }
+
+      result[key] = cleaned;
+      continue;
+    }
+
+    if (definition.type === "string" && !hasText(current)) {
+      result[key] = "";
+      continue;
+    }
+
+    if (Array.isArray(definition.enum) && !definition.enum.includes(current)) {
+      const fallback = ENUM_FALLBACKS[key];
+
+      if (fallback) {
+        result[key] = fallback;
+      }
+    }
+  }
+
+  return result;
 }
 
 // ===== PLAIN JSON SCHEMAS — Model ke liye (No preprocess confusion) =====
@@ -527,7 +753,9 @@ async function generateAssessment({ resume, selfDescription, jobDescription }) {
   console.log("[AI] Part 1 — Generating assessment...");
   console.time("[AI] Part 1 time");
 
-  const prompt = `You are an expert technical interviewer. Analyze this candidate and generate an assessment.
+  const systemPrompt = "You are an expert technical interviewer.";
+
+  const userPrompt = `Analyze this candidate and generate an assessment.
 
 RESUME:
 ${resume}
@@ -576,26 +804,18 @@ alignment MUST be exactly: "strong" OR "partial" OR "weak" OR "not_demonstrated"
 
 interviewerFocusAreas: array of 4 strings describing what to probe in interview`;
 
-  const response = await ollamaChat({
-    model: OLLAMA_MODEL,
-    messages: [{ role: "user", content: prompt }],
-    format: plainAssessmentSchema,
-    stream: false,
-    options: {
-      temperature: 0.1,
-      num_ctx: OLLAMA_NUM_CTX,
-      num_predict: OLLAMA_NUM_PREDICT,
-    },
+  const jsonString = await chatCompletion({
+    system: systemPrompt,
+    user: userPrompt,
+    schema: plainAssessmentSchema,
   });
 
   console.timeEnd("[AI] Part 1 time");
 
-  if (response.error) throw new Error(`Ollama error: ${response.error}`);
-
-  const content = response.message?.content;
-  if (!content) throw new Error("Empty response from Ollama — Part 1");
-
-  const parsed = parseModelJson(content);
+  const parsed = sanitizeModelOutput(
+    parseModelJson(jsonString),
+    plainAssessmentSchema,
+  );
 
   console.log("[AI] Part 1 parsed keys:", Object.keys(parsed));
 
@@ -613,7 +833,9 @@ async function generateQuestions({
   console.log("[AI] Part 2 — Generating questions and plan...");
   console.time("[AI] Part 2 time");
 
-  const prompt = `You are an expert technical interviewer. Generate interview questions and a preparation plan.
+  const systemPrompt = "You are an expert technical interviewer.";
+
+  const userPrompt = `Generate interview questions and a preparation plan.
 
 CANDIDATE ROLE: ${targetRole}
 SKILL GAPS TO ADDRESS: ${skillGaps.join(", ")}
@@ -655,28 +877,20 @@ preparationPlan: array of 5 OBJECTS:
 day MUST be a number (1, 2, 3, 4, 5)
 tasks MUST have at least 3 items per day`;
 
-  const response = await ollamaChat({
-    model: OLLAMA_MODEL,
-    messages: [{ role: "user", content: prompt }],
-    format: plainQuestionsSchema,
-    stream: false,
-    options: {
-      temperature: 0.1,
-      num_ctx: OLLAMA_NUM_CTX,
-      num_predict: OLLAMA_NUM_PREDICT,
-    },
+  const jsonString = await chatCompletion({
+    system: systemPrompt,
+    user: userPrompt,
+    schema: plainQuestionsSchema,
   });
 
   console.timeEnd("[AI] Part 2 time");
 
-  if (response.error) throw new Error(`Ollama error: ${response.error}`);
+  console.log("[AI] Part 2 preview:", jsonString.slice(0, 200));
 
-  const content = response.message?.content;
-  if (!content) throw new Error("Empty response from Ollama — Part 2");
-
-  console.log("[AI] Part 2 preview:", content.slice(0, 200));
-
-  const parsed = parseModelJson(content);
+  const parsed = sanitizeModelOutput(
+    parseModelJson(jsonString),
+    plainQuestionsSchema,
+  );
 
   console.log("[AI] Part 2 parsed keys:", Object.keys(parsed));
 

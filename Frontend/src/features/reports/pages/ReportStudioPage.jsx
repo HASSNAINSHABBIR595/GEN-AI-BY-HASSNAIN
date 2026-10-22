@@ -263,9 +263,9 @@ function ReportStudioPage() {
                     </div>
                   ) : (
                     <ul className="border-t border-line">
-                      {reports.map((report) => (
+                      {reports.map((report, index) => (
                         <li
-                          key={report._id}
+                          key={report._id || `report-${index}`}
                           className="border-b border-line py-5"
                         >
                           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
