@@ -1,6 +1,12 @@
 import multer from "multer";
 
-const MAX_RESUME_BYTES = 10 * 1024 * 1024; // 10 MB, matches the client limit.
+// The limit can be lowered for a host that caps the request body (a
+// serverless platform accepts about 4.5 MB). The client is told about it
+// through the error message.
+const MAX_RESUME_MB = Number(process.env.MAX_RESUME_MB) || 10;
+const MAX_RESUME_BYTES = MAX_RESUME_MB * 1024 * 1024;
+
+export const resumeSizeLimitMb = MAX_RESUME_MB;
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -35,7 +41,7 @@ export function uploadResume(req, res, next) {
 
     if (error.code === "LIMIT_FILE_SIZE") {
       res.status(413).json({
-        message: "The resume must be smaller than 10 MB.",
+        message: `The resume must be smaller than ${MAX_RESUME_MB} MB.`,
       });
       return;
     }

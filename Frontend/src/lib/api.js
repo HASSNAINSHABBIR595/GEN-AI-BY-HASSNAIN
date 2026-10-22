@@ -71,7 +71,8 @@ export function getApiErrorMessage(
     }
 
     if (status === 413) {
-      return "The resume is too large. Upload a PDF smaller than 10 MB.";
+      // The server knows the real limit of the host it runs on.
+      return message || "The resume is too large. Upload a smaller PDF.";
     }
 
     if (status === 400 || status === 422) {

@@ -3,6 +3,7 @@ import authRouter from "./routes/auth.routes.js";
 import interviewRouter from "./routes/interview.routes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import { resumeSizeLimitMb } from "./middlewares/file.middleware.js";
 
 const app = express();
 
@@ -53,7 +54,36 @@ const corsOptions = {
   allowedHeaders: ["Content-Type", "Authorization", "Accept"],
 };
 
-app.use(cors(corsOptions));
+/**
+ * A request that comes from the same host as the API is always allowed, also
+ * in production: that is the deployed setup, where the frontend and the API
+ * share one origin (the browser sends an Origin header on every POST).
+ */
+function isSameOrigin(request, origin) {
+  try {
+    const host = request.headers.host;
+
+    return Boolean(host) && new URL(origin).host === host;
+  } catch {
+    return false;
+  }
+}
+
+app.use(
+  cors((request, callback) => {
+    const origin = request.headers.origin;
+
+    if (origin && !allowedOrigins.includes(origin) && !isSameOrigin(request, origin)) {
+      if (!(isDevelopment && isLoopbackOrigin(origin))) {
+        const error = new Error("Origin not allowed by CORS.");
+        error.status = 403;
+        return callback(error);
+      }
+    }
+
+    return callback(null, corsOptions);
+  }),
+);
 
 app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
@@ -69,8 +99,8 @@ app.use((err, _req, res, next) => {
   }
 
   if (err?.code === "LIMIT_FILE_SIZE") {
-    return res.status(400).json({
-      message: "The resume must be smaller than 10 MB.",
+    return res.status(413).json({
+      message: `The resume must be smaller than ${resumeSizeLimitMb} MB.`,
     });
   }
 
