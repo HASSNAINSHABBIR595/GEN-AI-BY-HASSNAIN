@@ -5,6 +5,17 @@ import axios from "axios";
 const env = import.meta.env ?? {};
 
 const configuredBaseUrl = env.VITE_API_URL?.trim();
+const isProduction = env.NODE_ENV === "production";
+
+// In production we must never silently fall back to localhost: the frontend
+// and backend are deployed on separate domains, so a missing VITE_API_URL
+// would break every API call.
+if (isProduction && !configuredBaseUrl) {
+  throw new Error(
+    "VITE_API_URL is required in production. Set it to your backend URL " +
+      "(e.g. https://your-backend.vercel.app) in your Vercel project settings.",
+  );
+}
 
 export const API_BASE_URL = (
   configuredBaseUrl || "http://localhost:3000"

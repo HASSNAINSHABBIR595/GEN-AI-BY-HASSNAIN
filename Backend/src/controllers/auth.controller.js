@@ -3,6 +3,16 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import tokenBlacklistModel from "../models/blackList.model.js";
 
+const isProduction = process.env.NODE_ENV === "production";
+
+const cookieOptions = {
+  httpOnly: true, // JS se access nahi hoga
+  secure: isProduction, // true in production (HTTPS), false in dev
+  sameSite: isProduction ? "none" : "lax", // cross-site on different domains
+  path: "/", // accessible from all routes
+  maxAge: 24 * 60 * 60 * 1000, // 1 din
+};
+
 /**
  * @name registerUserController,
  * @description register a new user , excepts username,email and password in the required body
@@ -36,12 +46,7 @@ async function registerUserController(req, res) {
     process.env.JWT_SECRET,
     { expiresIn: "1d" },
   );
-  res.cookie("token", token, {
-    httpOnly: true, // JS se access nahi hoga
-    secure: false, // localhost pe false rakho, production pe true
-    sameSite: "lax", // cross-site requests allow karta hai
-    maxAge: 24 * 60 * 60 * 1000, // 1 din
-  });
+  res.cookie("token", token, cookieOptions);
   res.status(201).json({
     message: "user registered successfully",
     user: {
@@ -77,12 +82,7 @@ async function loginUserController(req, res) {
     process.env.JWT_SECRET,
     { expiresIn: "1d" },
   );
-  res.cookie("token", token, {
-    httpOnly: true, // JS se access nahi hoga
-    secure: false, // localhost pe false rakho, production pe true
-    sameSite: "lax", // cross-site requests allow karta hai
-    maxAge: 24 * 60 * 60 * 1000, // 1 din
-  });
+  res.cookie("token", token, cookieOptions);
   res.status(200).json({
     message: "user loggedIn successfully",
     user: {
@@ -103,7 +103,12 @@ async function logoutUserController(req, res) {
   if (token) {
     await tokenBlacklistModel.create({ token });
   }
-  res.clearCookie("token");
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? "none" : "lax",
+    path: "/",
+  });
   res.status(200).json({
     message: "user logged out successfully",
   });

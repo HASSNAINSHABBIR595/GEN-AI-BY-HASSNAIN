@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test src",
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "npx nodemon server.js  "
   },
   "dependencies": {

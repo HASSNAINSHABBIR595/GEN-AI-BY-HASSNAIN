@@ -12,18 +12,24 @@ const DEFAULT_ORIGINS = [
   "http://127.0.0.1:5173",
 ];
 
-const configuredOrigins = (process.env.CLIENT_URL || "")
+// FRONTEND_URL is the canonical name; CLIENT_URL is kept as a backwards-compat
+// alias so existing deployments keep working.
+const rawOrigins =
+  (process.env.FRONTEND_URL || process.env.CLIENT_URL || "");
+
+const configuredOrigins = rawOrigins
   .split(",")
-  .map((origin) => origin.trim())
+  .map((origin) => origin.trim().replace(/\/+$/, ""))
   .filter(Boolean);
 
-const allowedOrigins = [...new Set([...DEFAULT_ORIGINS, ...configuredOrigins])];
-
-// During development the Vite dev server moves to another port when 5173 is
-// taken, so any loopback origin is accepted. Production keeps the strict
-// allowlist from CLIENT_URL.
 const isDevelopment =
   (process.env.NODE_ENV || "development") !== "production";
+
+// Default loopback origins are only added in development. In production only
+// explicitly configured origins (from FRONTEND_URL / CLIENT_URL) are allowed,
+// so loopback is not accepted unless someone deliberately sets it.
+const defaultOrigins = isDevelopment ? DEFAULT_ORIGINS : [];
+const allowedOrigins = [...new Set([...defaultOrigins, ...configuredOrigins])];
 
 function isLoopbackOrigin(origin) {
   try {

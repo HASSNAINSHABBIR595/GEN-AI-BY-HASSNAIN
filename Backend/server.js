@@ -1,5 +1,17 @@
 import "dotenv/config";
 
+// Validate required environment variables before anything else.
+// Secret values are never logged.
+const requiredEnvVars = ["MONGO_URI", "JWT_SECRET", "CLIENT_URL"];
+const missing = requiredEnvVars.filter((key) => !process.env[key]);
+if (missing.length > 0) {
+  console.error(
+    `Missing required environment variables: ${missing.join(", ")}. ` +
+      "Set them in your deployment environment (Vercel project settings or .env).",
+  );
+  process.exit(1);
+}
+
 import app from "./src/app.js";
 import connectDb from "./src/config/database.js";
 
