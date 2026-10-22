@@ -107,8 +107,18 @@ const expectations = [
 const missing = expectations.filter((needle) => !haystack.includes(needle));
 console.log("missing sections:", missing.length ? missing : "none");
 
-const raw = /\[object Object\]|undefined|\bnull\b/.test(reportText);
-console.log("raw placeholders in report:", raw);
+// Rendering artefacts only: the words "undefined" or "null" inside a model
+// answer (a JavaScript explanation, for example) are legitimate content.
+const reportLines = reportText.split("\n").map((line) => line.trim());
+
+const artefacts = reportLines.filter(
+  (line) =>
+    line.includes("[object Object]") ||
+    /^(undefined|null)$/i.test(line) ||
+    /:\s*(undefined|null)\s*$/i.test(line),
+);
+
+console.log("rendering artefacts:", artefacts.length ? artefacts : "none");
 
 await page.screenshot({ path: "tools/e2e-report.png", fullPage: true });
 
@@ -123,7 +133,7 @@ console.log("\nconsole errors:", consoleErrors.length ? consoleErrors : "none");
 
 await browser.close();
 
-if (missing.length || raw) {
+if (missing.length || artefacts.length) {
   console.log("\nRESULT: FAILED");
   process.exit(1);
 }
