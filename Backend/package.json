@@ -1,0 +1,33 @@
+{
+  "name": "gen_ai",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test src",
+    "start": "nodemon server.js",
+    "dev": "npx nodemon server.js  "
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.1",
+    "multer": "^2.4.0",
+    "nodemon": "^3.1.14",
+    "ollama": "^0.6.4",
+    "openai": "^7.43.0",
+    "pdf-parse": "^2.4.5",
+    "undici": "^8.12.2",
+    "zod": "^4.6.7",
+    "zod-to-json-schema": "^3.25.2"
+  }
+}

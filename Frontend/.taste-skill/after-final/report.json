@@ -1,0 +1,2214 @@
+{
+ "url": "http://localhost:5174/",
+ "at": "2026-10-21T09:12:48.117Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.46,
+    0.83,
+    0.93,
+    0.58,
+    0.41,
+    0.43,
+    0.26,
+    0.77,
+    0.97
+   ],
+   "motion": {
+    "elements": 38,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 38,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7785,
+     "screens": 8.7,
+     "words": 847,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 5,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [
+      "library-green.jpg",
+      "library-warm.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Walk in ready.",
+     "words": 3,
+     "chars": 14,
+     "lines": 2,
+     "size": 135.4,
+     "vw": 9.4,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 0.86,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.54,
+     "top": 136,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Walk in ready.",
+     "words": 3,
+     "lines": 2,
+     "size": 135.4,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Walk in ready.",
+      "words": 3,
+      "chars": 14,
+      "lines": 2,
+      "size": 135.4,
+      "vw": 9.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.54,
+      "top": 136,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 500,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "7",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 743,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Two in. One out.",
+      "words": 4,
+      "chars": 16,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 1107,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.03,
+      "top": 1708,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 2186,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Quiet work.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 2809,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A report you can work from.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 3619,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.05,
+      "top": 3997,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "What every report answers.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 5739,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Walk in knowing.",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 135.4,
+      "vw": 9.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 6603,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "GEN+AI",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 259.2,
+      "vw": 18,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 7504,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      24,
+      46,
+      135,
+      259
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.8
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 259.2,
+      "vw": 18,
+      "font": "General Sans",
+      "text": "GEN+AI"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ecebe7",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.12,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ecebe7",
+       "top": 0,
+       "hsl": {
+        "h": 48,
+        "s": 0.12,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#e2e0d9",
+       "top": 949,
+       "hsl": {
+        "h": 47,
+        "s": 0.13,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#eef0ea",
+       "top": 3925,
+       "hsl": {
+        "h": 80,
+        "s": 0.17,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#38450f",
+       "top": 6457,
+       "hsl": {
+        "h": 74,
+        "s": 0.64,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#38450f",
+       "share": 0.6
+      },
+      {
+       "color": "#454f26",
+       "share": 0.23
+      },
+      {
+       "color": "#d6d8c9",
+       "share": 0.14
+      },
+      {
+       "color": "#ecebe7",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4e1d6",
+      "hsl": {
+       "h": 47,
+       "s": 0.21,
+       "l": 0.87
+      },
+      "fg": "#454f26"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 15,
+     "inHero": 4,
+     "radius": 0,
+     "height": 34,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Create account",
+      "Create your account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7785,
+    "margins": {
+     "left": 128,
+     "right": 147
+    },
+    "sections": [
+     {
+      "sel": "section.pb-16.pt-8",
+      "tag": "section",
+      "top": 72,
+      "height": 877,
+      "words": 93,
+      "media": 0,
+      "middle": 86,
+      "heading": {
+       "text": "Walk in",
+       "size": 135,
+       "tag": "h1"
+      },
+      "left": 128,
+      "right": 147,
+      "textLeft": 128,
+      "textRight": 147,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.section.surface-block",
+      "tag": "section",
+      "top": 949,
+      "height": 1729,
+      "words": 175,
+      "media": 0,
+      "middle": 142,
+      "heading": {
+       "text": "Two in. One out.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 128,
+      "right": 152,
+      "textLeft": 128,
+      "textRight": 152,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 2677,
+      "height": 784,
+      "words": 35,
+      "media": 2,
+      "middle": 16,
+      "heading": {
+       "text": "Quiet work.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 128,
+      "right": 128,
+      "textLeft": 128,
+      "textRight": 723,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#report.section",
+      "tag": "section",
+      "top": 3461,
+      "height": 2279,
+      "words": 237,
+      "media": 0,
+      "middle": 152,
+      "heading": {
+       "text": "84",
+       "size": 68,
+       "tag": "span"
+      },
+      "left": 128,
+      "right": 156,
+      "textLeft": 128,
+      "textRight": 156,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#inside.section.pt-0",
+      "tag": "section",
+      "top": 5739,
+      "height": 718,
+      "words": 152,
+      "media": 0,
+      "middle": 240,
+      "heading": {
+       "text": "Where do I stand?",
+       "size": 24,
+       "tag": "h3"
+      },
+      "left": 128,
+      "right": 146,
+      "textLeft": 128,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-block",
+      "tag": "section",
+      "top": 6457,
+      "height": 648,
+      "words": 30,
+      "media": 0,
+      "middle": 456,
+      "heading": {
+       "text": "Walk in",
+       "size": 135,
+       "tag": "h2"
+      },
+      "left": 128,
+      "right": 159,
+      "textLeft": 128,
+      "textRight": 159,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7105,
+      "height": 680,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "GEN+AI",
+       "size": 259,
+       "tag": "a"
+      },
+      "left": 128,
+      "right": 128,
+      "textLeft": 128,
+      "textRight": 128,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Walk in ready.",
+      "size": 135,
+      "top": 136,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 128,
+      "n": 10
+     },
+     {
+      "x": 939,
+      "n": 8
+     },
+     {
+      "x": 532,
+      "n": 6
+     },
+     {
+      "x": 633,
+      "n": 6
+     },
+     {
+      "x": 907,
+      "n": 6
+     },
+     {
+      "x": 164,
+      "n": 2
+     },
+     {
+      "x": 556,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 39,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.1,
+    "voidBox": {
+     "x": 660,
+     "y": 660,
+     "w": 540,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.53,
+    0.64,
+    0.83,
+    0.56,
+    0.56,
+    0.63,
+    0.9
+   ],
+   "motion": {
+    "elements": 38,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 38,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7088,
+     "screens": 6.9,
+     "words": 744,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 5,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [
+      "library-green.jpg",
+      "library-warm.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Walk in ready.",
+     "words": 3,
+     "chars": 14,
+     "lines": 2,
+     "size": 72.2,
+     "vw": 9.4,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 0.86,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.89,
+     "top": 120,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Walk in ready.",
+     "words": 3,
+     "lines": 2,
+     "size": 72.2,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Walk in ready.",
+      "words": 3,
+      "chars": 14,
+      "lines": 2,
+      "size": 72.2,
+      "vw": 9.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 120,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 52,
+      "vw": 6.8,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 630,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Two in. One out.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 1103,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 1872,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 52,
+      "vw": 6.8,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 2339,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Quiet work.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.2,
+      "top": 2839,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A report you can work from.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 30,
+      "vw": 3.9,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 3398,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 52,
+      "vw": 6.8,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 3720,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "What every report answers.",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 4859,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Walk in knowing.",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 72.2,
+      "vw": 9.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 5736,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "GEN+AI",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 138.2,
+      "vw": 18,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 6898,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      21,
+      30,
+      72,
+      138
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.8
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 138.2,
+      "vw": 18,
+      "font": "General Sans",
+      "text": "GEN+AI"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ecebe7",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.12,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ecebe7",
+       "top": 0,
+       "hsl": {
+        "h": 48,
+        "s": 0.12,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#eef0ea",
+       "top": 566,
+       "hsl": {
+        "h": 80,
+        "s": 0.17,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#e2e0d9",
+       "top": 1015,
+       "hsl": {
+        "h": 47,
+        "s": 0.13,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#38450f",
+       "top": 5570,
+       "hsl": {
+        "h": 74,
+        "s": 0.64,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#38450f",
+       "share": 0.57
+      },
+      {
+       "color": "#454f26",
+       "share": 0.25
+      },
+      {
+       "color": "#d6d8c9",
+       "share": 0.16
+      },
+      {
+       "color": "#ecebe7",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e4e1d6",
+      "hsl": {
+       "h": 47,
+       "s": 0.21,
+       "l": 0.87
+      },
+      "fg": "#454f26"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 2,
+     "radius": 0,
+     "height": 34,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Create your account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 7088,
+    "margins": {
+     "left": 41,
+     "right": 42
+    },
+    "sections": [
+     {
+      "sel": "section.pb-16.pt-8",
+      "tag": "section",
+      "top": 72,
+      "height": 943,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Walk in",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 41,
+      "right": 60,
+      "textLeft": 41,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.section.surface-block",
+      "tag": "section",
+      "top": 1015,
+      "height": 1732,
+      "words": 175,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Two in. One out.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 60,
+      "textLeft": 41,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 2747,
+      "height": 564,
+      "words": 35,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Quiet work.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 41,
+      "textLeft": 41,
+      "textRight": 139,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#report.section",
+      "tag": "section",
+      "top": 3310,
+      "height": 1549,
+      "words": 161,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "84",
+       "size": 52,
+       "tag": "span"
+      },
+      "left": 41,
+      "right": 60,
+      "textLeft": 41,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#inside.section.pt-0",
+      "tag": "section",
+      "top": 4859,
+      "height": 711,
+      "words": 152,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where do I stand?",
+       "size": 21,
+       "tag": "h3"
+      },
+      "left": 41,
+      "right": 45,
+      "textLeft": 41,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-block",
+      "tag": "section",
+      "top": 5570,
+      "height": 737,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Walk in",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 276,
+      "textLeft": 41,
+      "textRight": 276,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 6307,
+      "height": 780,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Product",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 41,
+      "textLeft": 41,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Walk in ready.",
+      "size": 72,
+      "top": 120,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 41,
+      "n": 22
+     },
+     {
+      "x": 305,
+      "n": 6
+     },
+     {
+      "x": 77,
+      "n": 2
+     },
+     {
+      "x": 65,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 31,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.61,
+    0.83,
+    0.75,
+    0.84,
+    0.59,
+    0.88,
+    0.57,
+    0.49,
+    0.87,
+    0.99
+   ],
+   "motion": {
+    "elements": 38,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 38,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8331,
+     "screens": 9.9,
+     "words": 744,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 5,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [
+      "library-green.jpg",
+      "library-warm.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Walk in ready.",
+     "words": 3,
+     "chars": 14,
+     "lines": 2,
+     "size": 56,
+     "vw": 14.4,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.045,
+     "leading": 0.86,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 104,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Walk in ready.",
+     "words": 3,
+     "lines": 2,
+     "size": 56,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Walk in ready.",
+      "words": 3,
+      "chars": 14,
+      "lines": 2,
+      "size": 56,
+      "vw": 14.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 104,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 52,
+      "vw": 13.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.14,
+      "top": 645,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Two in. One out.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1181,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 2010,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 52,
+      "vw": 13.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.14,
+      "top": 2482,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Quiet work.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 3038,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A report you can work from.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 4049,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "84",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 52,
+      "vw": 13.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.14,
+      "top": 4370,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "What every report answers.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5646,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Walk in knowing.",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 56,
+      "vw": 14.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.045,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6815,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "GEN+AI",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.76,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8140,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      21,
+      30,
+      56,
+      72
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.8
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 72,
+      "vw": 18.5,
+      "font": "General Sans",
+      "text": "GEN+AI"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ecebe7",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.12,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ecebe7",
+       "top": 0,
+       "hsl": {
+        "h": 48,
+        "s": 0.12,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#eef0ea",
+       "top": 581,
+       "hsl": {
+        "h": 80,
+        "s": 0.17,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#e2e0d9",
+       "top": 1093,
+       "hsl": {
+        "h": 47,
+        "s": 0.13,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#38450f",
+       "top": 6714,
+       "hsl": {
+        "h": 74,
+        "s": 0.64,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#38450f",
+       "share": 0.57
+      },
+      {
+       "color": "#454f26",
+       "share": 0.25
+      },
+      {
+       "color": "#d6d8c9",
+       "share": 0.16
+      },
+      {
+       "color": "#ecebe7",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#38450f",
+      "hsl": {
+       "h": 74,
+       "s": 0.64,
+       "l": 0.16
+      },
+      "fg": "#ecebe7"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": 0,
+     "height": 56,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Create your account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8331,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.pb-16.pt-8",
+      "tag": "section",
+      "top": 72,
+      "height": 1021,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Walk in",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 39,
+      "textLeft": 20,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how-it-works.section.surface-block",
+      "tag": "section",
+      "top": 1093,
+      "height": 1861,
+      "words": 175,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Two in. One out.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 35,
+      "textLeft": 20,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 2954,
+      "height": 1008,
+      "words": 35,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Quiet work.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#report.section",
+      "tag": "section",
+      "top": 3961,
+      "height": 1684,
+      "words": 161,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "84",
+       "size": 52,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 39,
+      "textLeft": 20,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#inside.section.pt-0",
+      "tag": "section",
+      "top": 5646,
+      "height": 1068,
+      "words": 152,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where do I stand?",
+       "size": 21,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-block",
+      "tag": "section",
+      "top": 6714,
+      "height": 608,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Walk in",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 36,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7321,
+      "height": 1009,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Product",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Walk in ready.",
+      "size": 56,
+      "top": 104,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 28
+     },
+     {
+      "x": 40,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 31,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 128px on the left, 147px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\desktop-page-01.jpg",
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\desktop-page-02.jpg",
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\tablet-page-01.jpg",
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\mobile-page-01.jpg",
+    "C:\\Users\\HASSNAIN\\Desktop\\CODE\\GEN_AI\\Frontend\\.taste-skill\\after-final\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
