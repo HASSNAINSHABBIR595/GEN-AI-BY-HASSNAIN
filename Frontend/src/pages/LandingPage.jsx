@@ -8,12 +8,11 @@ import ReportSheet from "../components/ReportSheet";
 import { REPORTS, REPORT_ORDER } from "../data/reports.js";
 import Reveal from "../components/Reveal";
 import TechText from "../components/TechText";
+import ChromaGrid from "../components/ChromaGrid";
 import { useEntrance } from "../animations/useEntrance.js";
 import { useMaskedLines } from "../animations/useMaskedLines.js";
 import { useAuth } from "../features/auth/hooks/useAuth";
 
-import libraryGreen from "../assets/images/library-green.jpg";
-import libraryWarm from "../assets/images/library-warm.jpg";
 
 const PROMISES = [
   {
@@ -413,52 +412,72 @@ function LandingPage() {
           </div>
         </Reveal>
 
-        {/* The rooms */}
+        {/* Gallery */}
         <Reveal as="section" className="section-tight" staggerMs={55}>
           <div className="shell">
-            <div className="mosaic" data-reveal>
-              <div className="col-span-12 flex flex-col justify-between gap-10 bg-field p-7 text-field-ink sm:p-9 md:col-span-4">
-                <h2 className="h2 text-field-ink">
-                  Quiet work.
-                </h2>
-
-                <p className="max-w-[30ch] text-[18px] leading-6 text-field-muted">
-                  The report does the reading and the sorting. You get the room,
-                  the list, and the next seven days.
-                </p>
-              </div>
-
-              <figure className="col-span-12 h-[320px] overflow-hidden md:col-span-5 md:h-auto">
-                <img
-                  src={libraryGreen}
-                  alt="A miniature Georgian library in green, with a fireplace, writing desk and walls of books."
-                  width="1920"
-                  height="1189"
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover grayscale"
-                />
-              </figure>
-
-              <figure className="col-span-12 h-[320px] overflow-hidden md:col-span-3 md:h-auto">
-                <img
-                  src={libraryWarm}
-                  alt="A miniature eighteenth-century library in warm wood, with a chandelier, armchairs and a writing table."
-                  width="1920"
-                  height="1627"
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover grayscale"
-                />
-              </figure>
+            <div className="max-w-[42ch]" data-reveal>
+              <h2 className="h2">The work behind the report.</h2>
+              <p className="body mt-4">
+                Realistic moments from the review, analysis, and decision process
+                that shape every GEN+AI readiness report.
+              </p>
             </div>
 
-            <p className="caption">
-              <span>
-                Miniature library rooms by Narcissa Niblack Thorne, c. 1937.
-              </span>
-              <span>Art Institute of Chicago, public domain.</span>
-            </p>
+            <div className="mt-10" data-reveal>
+              <ChromaGrid
+                items={[
+                  {
+                    image: '/images/chroma-grid/report-review.jpg',
+                    title: 'Report Review',
+                    subtitle: 'Understand every detail',
+                    accent: '#c6d66b',
+                    alt: 'Professional reviewing an interview assessment report'
+                  },
+                  {
+                    image: '/images/chroma-grid/resume-analysis.jpg',
+                    title: 'Resume Analysis',
+                    subtitle: 'Skills meet opportunity',
+                    accent: '#b8c77a',
+                    alt: 'Recruiter analyzing a resume and evaluation dashboard'
+                  },
+                  {
+                    image: '/images/chroma-grid/interview-insights.jpg',
+                    title: 'Interview Insights',
+                    subtitle: 'Evidence behind every score',
+                    accent: '#d9c58b',
+                    alt: 'Professional examining interview insights'
+                  },
+                  {
+                    image: '/images/chroma-grid/focused-work.jpg',
+                    title: 'Focused Work',
+                    subtitle: 'Clarity without the noise',
+                    accent: '#c4d2a0',
+                    alt: 'Professional working in a quiet office'
+                  },
+                  {
+                    image: '/images/chroma-grid/hiring-decisions.jpg',
+                    title: 'Hiring Decisions',
+                    subtitle: 'Make informed decisions',
+                    accent: '#d6b98c',
+                    alt: 'Recruiter comparing candidate evaluations'
+                  },
+                  {
+                    image: '/images/chroma-grid/intelligent-reports.jpg',
+                    title: 'Intelligent Reports',
+                    subtitle: 'Turn insights into action',
+                    accent: '#a9bd70',
+                    alt: 'Professional reading an AI-generated report'
+                  }
+                ]}
+                columns={3}
+                radius={260}
+                theme="light"
+                cardRadius={18}
+                gap={16}
+                grayscale={1}
+                dim={0.08}
+              />
+            </div>
           </div>
         </Reveal>
 

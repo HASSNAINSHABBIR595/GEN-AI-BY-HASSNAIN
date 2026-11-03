@@ -71,15 +71,6 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="md:col-span-2">
-            <h2 className="text-[15px] font-semibold text-field-ink">The rooms</h2>
-
-            <p className="mt-4 text-[15px] leading-6 text-field-muted">
-              Our photographs are miniature library rooms by Narcissa Niblack
-              Thorne, c. 1937, held by the Art Institute of Chicago and in the
-              public domain.
-            </p>
-          </div>
         </div>
 
         <div className="mt-24">
