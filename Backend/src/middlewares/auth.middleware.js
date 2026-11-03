@@ -5,6 +5,10 @@ async function authUser(req, res, next) {
   try {
     const token = req.cookies?.token;
 
+    // Debug logging for troubleshooting
+    console.log("[Auth Middleware] Cookies received:", Object.keys(req.cookies || {}));
+    console.log("[Auth Middleware] Token present:", !!token);
+
     if (!token) {
       return res.status(401).json({
         message: "Authentication required. Please log in.",
@@ -29,6 +33,8 @@ async function authUser(req, res, next) {
 
     return next();
   } catch (error) {
+    console.error("[Auth Middleware Error]", error.message);
+    
     if (
       error.name === "JsonWebTokenError" ||
       error.name === "TokenExpiredError"
