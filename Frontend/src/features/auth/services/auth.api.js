@@ -8,6 +8,11 @@ async function register({ username, email, password }) {
     password,
   });
 
+  // Save token to localStorage for token-based auth
+  if (response.data.token) {
+    localStorage.setItem("token", response.data.token);
+  }
+
   return response.data;
 }
 
@@ -18,13 +23,23 @@ async function login({ email, password }) {
     password,
   });
 
+  // Save token to localStorage for token-based auth
+  if (response.data.token) {
+    localStorage.setItem("token", response.data.token);
+  }
+
   return response.data;
 }
 
 // Logout
 async function logout() {
-  const response = await api.get("/api/auth/logout");
-  return response.data;
+  try {
+    const response = await api.get("/api/auth/logout");
+    return response.data;
+  } finally {
+    // Always remove token, even if API call fails
+    localStorage.removeItem("token");
+  }
 }
 
 // Get current user

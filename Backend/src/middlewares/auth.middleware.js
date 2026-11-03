@@ -3,15 +3,17 @@ import tokenBlacklistModel from "../models/blackList.model.js";
 
 async function authUser(req, res, next) {
   try {
-    const token = req.cookies?.token;
+    // Read token from Authorization header first, then fallback to cookie
+    const authHeader = req.headers.authorization;
+    const token =
+      (authHeader && authHeader.startsWith("Bearer ") && authHeader.split(" ")[1]) ||
+      req.cookies?.token;
 
-    // Debug logging for troubleshooting
-    console.log("[Auth Middleware] Cookies received:", Object.keys(req.cookies || {}));
     console.log("[Auth Middleware] Token present:", !!token);
 
     if (!token) {
       return res.status(401).json({
-        message: "Authentication required. Please log in.",
+        message: "Unauthorized",
       });
     }
 
@@ -43,8 +45,6 @@ async function authUser(req, res, next) {
         message: "Invalid or expired session. Please log in again.",
       });
     }
-
-    console.error("[Auth Middleware]", error.message);
 
     return res.status(500).json({
       message: "Authentication could not be verified.",

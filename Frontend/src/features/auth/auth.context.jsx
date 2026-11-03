@@ -11,10 +11,21 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     async function checkUser() {
       try {
+        // Only call get-me if token exists in localStorage
+        const token = localStorage.getItem("token");
+        if (!token) {
+          setUser(null);
+          setLoading(false);
+          setInitialized(true);
+          return;
+        }
+
         const data = await getMe();
         setUser(data.user);
       } catch {
+        // If get-me fails, clear user and token
         setUser(null);
+        localStorage.removeItem("token");
       } finally {
         setLoading(false);
         setInitialized(true);

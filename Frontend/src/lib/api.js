@@ -23,15 +23,35 @@ const REQUEST_TIMEOUT_MS =
 /**
  * Shared HTTP client for the GEN+AI API.
  *
- * - Sends the httpOnly auth cookie on every request.
+ * - Sends JWT token via Authorization header (token-based auth)
  * - Uses a long timeout because report generation runs two local model calls
  *   (assessment + questions), which can take several minutes on CPU.
  */
 const api = axios.create({
   baseURL: API_BASE_URL,
-  withCredentials: true,
+  withCredentials: false, // No cookies needed for token-based auth
   timeout: REQUEST_TIMEOUT_MS,
 });
+
+// Request interceptor: Add Authorization header with token from localStorage
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
+// Response interceptor: Clear token on 401 (unauthorized)
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem("token");
+    }
+    return Promise.reject(error);
+  }
+);
 
 function serverMessage(error) {
   const message = error?.response?.data?.message;

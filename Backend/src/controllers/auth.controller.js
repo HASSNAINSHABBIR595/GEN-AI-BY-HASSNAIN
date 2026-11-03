@@ -3,18 +3,6 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import tokenBlacklistModel from "../models/blackList.model.js";
 
-// Centralized cookie options for cross-origin authentication
-const getCookieOptions = () => {
-  const isProduction = process.env.NODE_ENV === "production";
-  return {
-    httpOnly: true,
-    secure: true, // Always true for sameSite: "none" to work
-    sameSite: "none", // Required for cross-domain cookies
-    path: "/",
-    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-  };
-};
-
 /**
  * @name registerUserController,
  * @description register a new user , excepts username,email and password in the required body
@@ -49,10 +37,10 @@ async function registerUserController(req, res) {
     { expiresIn: "7d" },
   );
   
-  res.cookie("token", token, getCookieOptions());
-  
+  // Token-based auth: send token in response body instead of cookie
   res.status(201).json({
     message: "user registered successfully",
+    token,
     user: {
       id: user._id,
       username: user.username,
@@ -87,10 +75,10 @@ async function loginUserController(req, res) {
     { expiresIn: "7d" },
   );
   
-  res.cookie("token", token, getCookieOptions());
-  
+  // Token-based auth: send token in response body instead of cookie
   res.status(200).json({
     message: "user loggedIn successfully",
+    token,
     user: {
       id: user._id,
       username: user.username,
@@ -105,18 +93,15 @@ async function loginUserController(req, res) {
  * @access public
  */
 async function logoutUserController(req, res) {
-  const token = req.cookies.token;
+  // Token can come from Authorization header or cookie (for backward compatibility)
+  const authHeader = req.headers.authorization;
+  const token =
+    (authHeader && authHeader.startsWith("Bearer ") && authHeader.split(" ")[1]) ||
+    req.cookies?.token;
+  
   if (token) {
     await tokenBlacklistModel.create({ token });
   }
-  
-  // Clear cookie with same options (without maxAge)
-  res.clearCookie("token", {
-    httpOnly: true,
-    secure: true,
-    sameSite: "none",
-    path: "/",
-  });
   
   res.status(200).json({
     message: "user logged out successfully",
