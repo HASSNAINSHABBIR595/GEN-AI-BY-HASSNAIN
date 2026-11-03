@@ -3,6 +3,18 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import tokenBlacklistModel from "../models/blackList.model.js";
 
+// Centralized cookie options for cross-origin authentication
+const getCookieOptions = () => {
+  const isProduction = process.env.NODE_ENV === "production";
+  return {
+    httpOnly: true,
+    secure: true, // Always true for sameSite: "none" to work
+    sameSite: "none", // Required for cross-domain cookies
+    path: "/",
+    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+  };
+};
+
 /**
  * @name registerUserController,
  * @description register a new user , excepts username,email and password in the required body
@@ -34,17 +46,10 @@ async function registerUserController(req, res) {
   const token = jwt.sign(
     { id: user._id, username: user.username },
     process.env.JWT_SECRET,
-    { expiresIn: "1d" },
+    { expiresIn: "7d" },
   );
   
-  // Cookie settings for cross-origin auth (frontend on different domain)
-  const isProduction = process.env.NODE_ENV === "production";
-  res.cookie("token", token, {
-    httpOnly: true,
-    secure: isProduction, // true in production (HTTPS required)
-    sameSite: isProduction ? "none" : "lax", // "none" for cross-origin in production
-    maxAge: 24 * 60 * 60 * 1000, // 1 day
-  });
+  res.cookie("token", token, getCookieOptions());
   
   res.status(201).json({
     message: "user registered successfully",
@@ -79,17 +84,10 @@ async function loginUserController(req, res) {
   const token = jwt.sign(
     { id: user._id, username: user.username },
     process.env.JWT_SECRET,
-    { expiresIn: "1d" },
+    { expiresIn: "7d" },
   );
   
-  // Cookie settings for cross-origin auth (frontend on different domain)
-  const isProduction = process.env.NODE_ENV === "production";
-  res.cookie("token", token, {
-    httpOnly: true,
-    secure: isProduction, // true in production (HTTPS required)
-    sameSite: isProduction ? "none" : "lax", // "none" for cross-origin in production
-    maxAge: 24 * 60 * 60 * 1000, // 1 day
-  });
+  res.cookie("token", token, getCookieOptions());
   
   res.status(200).json({
     message: "user loggedIn successfully",
@@ -111,7 +109,15 @@ async function logoutUserController(req, res) {
   if (token) {
     await tokenBlacklistModel.create({ token });
   }
-  res.clearCookie("token");
+  
+  // Clear cookie with same options (without maxAge)
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+    path: "/",
+  });
+  
   res.status(200).json({
     message: "user logged out successfully",
   });
