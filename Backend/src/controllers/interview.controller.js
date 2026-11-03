@@ -1,13 +1,11 @@
-// Lazy load pdf-parse to avoid DOMMatrix errors on serverless cold start
 import generateInterviewReport from "../services/ai.service.js";
 import InterviewReportModel from "../models/interviewReport.model.js";
+import pdfParse from "pdf-parse";
 
 /**
  * Extract text from PDF buffer using pdf-parse
- * Lazy-loaded to prevent top-level import crash on Vercel
  */
 async function extractPdfText(buffer) {
-  const pdfParse = (await import("pdf-parse")).default;
   const data = await pdfParse(buffer);
   return data.text?.trim() || "";
 }
@@ -40,13 +38,13 @@ async function generateInterviewController(req, res) {
       });
     }
 
-    // 3. Extract text from PDF using lazy-loaded pdf-parse
+    // 3. Extract text from PDF
     let resumeContent;
     
     try {
       resumeContent = await extractPdfText(req.file.buffer);
     } catch (error) {
-      console.error("[PDF parsing error]", error);
+      console.error("[PDF Parse Error]", error);
       return res.status(400).json({
         message: "Failed to parse PDF file. Please ensure it's a valid text-based PDF.",
       });
@@ -54,8 +52,7 @@ async function generateInterviewController(req, res) {
 
     if (!resumeContent) {
       return res.status(400).json({
-        message:
-          "Could not extract text from this PDF. Please upload a text-based PDF.",
+        message: "PDF mein readable text nahi mila. Scanned PDF support nahi hai.",
       });
     }
 
