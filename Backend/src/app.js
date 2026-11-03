@@ -63,6 +63,19 @@ app.use("/api/auth", authRouter);
 app.use("/api/interview", interviewRouter);
 app.use("/api/status", statusRouter);
 
+app.get("/", (_req, res) => {
+  res.json({
+    status: "ok",
+    message: "GEN+AI Backend is running",
+    version: "1.0.0",
+    endpoints: {
+      auth: "/api/auth",
+      interview: "/api/interview",
+      status: "/api/status",
+    },
+  });
+});
+
 // Keep upload and request errors in the API's JSON format so the frontend
 // can show a useful message instead of an HTML error page.
 app.use((err, _req, res, next) => {
