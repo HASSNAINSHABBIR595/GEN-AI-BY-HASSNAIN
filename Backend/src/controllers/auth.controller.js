@@ -36,12 +36,16 @@ async function registerUserController(req, res) {
     process.env.JWT_SECRET,
     { expiresIn: "1d" },
   );
+  
+  // Cookie settings for cross-origin auth (frontend on different domain)
+  const isProduction = process.env.NODE_ENV === "production";
   res.cookie("token", token, {
-    httpOnly: true, // JS se access nahi hoga
-    secure: false, // localhost pe false rakho, production pe true
-    sameSite: "lax", // cross-site requests allow karta hai
-    maxAge: 24 * 60 * 60 * 1000, // 1 din
+    httpOnly: true,
+    secure: isProduction, // true in production (HTTPS required)
+    sameSite: isProduction ? "none" : "lax", // "none" for cross-origin in production
+    maxAge: 24 * 60 * 60 * 1000, // 1 day
   });
+  
   res.status(201).json({
     message: "user registered successfully",
     user: {
@@ -77,12 +81,16 @@ async function loginUserController(req, res) {
     process.env.JWT_SECRET,
     { expiresIn: "1d" },
   );
+  
+  // Cookie settings for cross-origin auth (frontend on different domain)
+  const isProduction = process.env.NODE_ENV === "production";
   res.cookie("token", token, {
-    httpOnly: true, // JS se access nahi hoga
-    secure: false, // localhost pe false rakho, production pe true
-    sameSite: "lax", // cross-site requests allow karta hai
-    maxAge: 24 * 60 * 60 * 1000, // 1 din
+    httpOnly: true,
+    secure: isProduction, // true in production (HTTPS required)
+    sameSite: isProduction ? "none" : "lax", // "none" for cross-origin in production
+    maxAge: 24 * 60 * 60 * 1000, // 1 day
   });
+  
   res.status(200).json({
     message: "user loggedIn successfully",
     user: {
