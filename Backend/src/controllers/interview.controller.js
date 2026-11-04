@@ -1,6 +1,13 @@
 import generateInterviewReport from "../services/ai.service.js";
 import InterviewReportModel from "../models/interviewReport.model.js";
-import pdfParse from "pdf-parse";
+
+// pdf-parse@1.1.1 ke index.js mein ek debug block hai jo ESM import par
+// './test/data/05-versions-space.pdf' read karta hai aur serverless function
+// crash kar deta hai (ENOENT). Internal module direct import karne se wo block bypass hota hai.
+// Saath hi bundled pdf.js ko statically reference karte hain taake Vercel ka file
+// tracer usay bundle mein include kare (pdf-parse usay dynamic require se load karta hai).
+import "pdf-parse/lib/pdf.js/v1.10.100/build/pdf.js";
+import pdfParse from "pdf-parse/lib/pdf-parse.js";
 
 /**
  * Extract text from PDF buffer using pdf-parse
